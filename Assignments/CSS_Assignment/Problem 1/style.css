@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    color: #042658;
+    margin-bottom: 20px;
+}
+header {
+    background-color: #fff;
+    padding: 1rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+.banner {
+    background: linear-gradient(rgba(25, 118, 210, 0.1), rgba(25, 118, 210, 0.1)), url("https://t4.ftcdn.net/jpg/06/04/90/45/360_F_604904549_XUC134u3Zfng32Y9HSck0hrl8vvlEpb4.jpg");
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.services {
+    padding: 50px 5%;
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service-card {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    border: 2px solid #bbdefb;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+.services p {
+    color: #666;
+    font-size: 0.9rem;
+}
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input[type="text"], input[type="email"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #1565c0;
+    cursor: pointer;
+}
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+footer {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureBank | Your Personal Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .balance-amount {
+            color: #2e7d32;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: #fff3cd; color: #856404; padding: 15px; text-align: center; border-bottom: 1px solid #ffeeba;">
+        <strong>Warning:</strong> Unusual login attempt detected from a new device.
+    </div>
+    <header class="top-header">
+        <div class="logo">SecureBank</div>
+        <div class="user-profile">Welcome, User</div>
+    </header>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Transactions</a></li>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+            <form class="login-form">
+                <h4>Switch Account</h4>
+                <input type="password" placeholder="Enter PIN">
+                <button type="submit">Unlock</button>
+            </form>
+        </aside>
+        <main class="content">
+            <section class="summary-grid">
+                <div class="card">
+                    <h3>Total Balance</h3>
+                    <p class="balance-amount">$12,450.00</p>
+                </div>
+                <div class="card">
+                    <h3>Savings</h3>
+                    <p>$5,200.00</p>
+                </div>
+                <div class="card">
+                    <h3>Credit Card</h3>
+                    <p>-$450.00</p>
+                </div>
+            </section>
+            <section class="transactions">
+                <h3>Recent Transactions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="credit">
+                            <td>Feb 18, 2026</td>
+                            <td>Salary Deposit</td>
+                            <td>Income</td>
+                            <td>+$3,000</td>
+                        </tr>
+                        <tr class="debit">
+                            <td>Feb 17, 2026</td>
+                            <td>Starbucks Coffee</td>
+                            <td>Food</td>
+                            <td>-$5.50</td>
+                        </tr>
+                        <tr class="debit">
+                            <td>Feb 16, 2026</td>
+                            <td>Monthly Rent</td>
+                            <td>Housing</td>
+                            <td>-$1,200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2026 SecureBank. Your security is our priority.</p>
+    </footer>
+
+</body>
+</html>
