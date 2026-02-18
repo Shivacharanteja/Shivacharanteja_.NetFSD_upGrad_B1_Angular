@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Course Registration Portal</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; line-height: 1.6; }
+        section { margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, video, progress { width: 100%; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Certification Program Registration</h1>
+    </header>
+
+    <main>
+        <section>
+            <label for="enrollment-progress">Enrollment Progress:</label>
+            <progress id="enrollment-progress" value="50" max="100"></progress>
+        </section>
+
+        <section>
+            <h2>Step 1: Introduction</h2>
+            <video controls width="100%">
+                <source src="intro-video.mp4" type="video/mp4">
+                <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" default>
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section>
+            <h2>Step 2: Course Details</h2>
+            <form action="#" method="POST">
+                
+                <label for="course">Register for Course:</label>
+                <input list="courses" id="course" name="course" placeholder="Start typing a course..." required>
+                <datalist id="courses">
+                    <option value="Web Development">
+                    <option value="Data Science">
+                    <option value="Cybersecurity">
+                    <option value="Cloud Infrastructure">
+                    <option value="Generative AI">
+                </datalist>
+
+                <label for="batch">Select Batch Month:</label>
+                <input type="month" id="batch" name="batch" required>
+
+                <label for="timing">Preferred Session Timing:</label>
+                <input type="time" id="timing" name="timing" required>
+
+                <label for="skill">Rate Your Skill Level (1-10):</label>
+                <input type="range" id="skill" name="skill" min="1" max="10" step="1" value="5">
+                <p>Selected Level: <meter min="0" max="10" value="5"></meter></p>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 E-Learning Platform</p>
+    </footer>
+
+</body>
+</html>

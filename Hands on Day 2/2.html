@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Appointment Booking</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        form { max-width: 500px; margin: auto; border: 1px solid #ccc; padding: 20px; border-radius: 8px; }
+        div { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        input, select { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+        input[type="checkbox"] { width: auto; }
+        button { background: #007bff; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <h2>Book an Appointment</h2>
+
+        <div>
+            <label for="dept">Department</label>
+            <input list="dept-list" id="dept" name="department" placeholder="Type to search..." required>
+            <datalist id="dept-list">
+                <option value="Cardiology">
+                <option value="Neurology">
+                <option value="Pediatrics">
+                <option value="Orthopedics">
+            </datalist>
+        </div>
+
+        <div>
+            <label for="doctor">Preferred Doctor</label>
+            <input list="doc-list" id="doctor" name="doctor" placeholder="Select or type doctor name" required>
+            <datalist id="doc-list">
+                <option value="Dr. Smith">
+                <option value="Dr. Adams">
+                <option value="Dr. Williams">
+            </datalist>
+        </div>
+
+        <div>
+            <label for="app-date">Appointment Date</label>
+            <input type="date" id="app-date" name="date" required>
+        </div>
+
+        <div>
+            <input type="checkbox" id="emergency" name="emergency" onchange="toggleTime()">
+            <label style="display:inline" for="emergency">Emergency Case</label>
+        </div>
+
+        <div>
+            <label for="app-time">Appointment Time</label>
+            <input type="time" id="app-time" name="time" required>
+        </div>
+
+        <div>
+            <label for="age">Patient Age</label>
+            <input type="number" id="age" name="age" min="0" max="120" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required>
+        </div>
+
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="reports">Upload Medical Reports</label>
+            <input type="file" id="reports" name="reports" multiple>
+        </div>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+
+    <script>
+        // Requirement 3: Prevent past dates
+        const dateInput = document.getElementById('app-date');
+        dateInput.min = new Date().toISOString().split("T")[0];
+
+        // Requirement 8: Disable time if emergency is checked
+        function toggleTime() {
+            const isEmergency = document.getElementById('emergency').checked;
+            const timeInput = document.getElementById('app-time');
+            timeInput.disabled = isEmergency;
+            if(isEmergency) timeInput.required = false;
+            else timeInput.required = true;
+        }
+    </script>
+</body>
+</html>
