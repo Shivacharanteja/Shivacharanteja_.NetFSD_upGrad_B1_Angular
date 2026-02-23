@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Assignment</title>
+    <style>
+        body { background-color: lightblue; font-size: 18px; transition: 0.3s; }
+        nav { display: flex; gap: 20px; padding: 20px; background: #eee; }
+        @media (max-width: 600px) {
+            body { background-color: lightcoral; font-size: 14px; }
+            nav { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h1>Responsive Test</h1>
+    <p>Resize the browser to see the magic happen!</p>
+</body>
+</html>
