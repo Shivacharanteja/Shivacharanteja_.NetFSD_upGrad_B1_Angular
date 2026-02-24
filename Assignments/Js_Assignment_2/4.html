@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Student Profile Manager</h2>
+    <div id="profileCard" style="border: 2px solid #333; padding: 15px; width: 250px;">
+        <p id="sName"></p>
+        <p id="sRoll"></p>
+        <p id="sMarks"></p>
+    </div>
+    <br>
+    <input type="number" id="newMarksInput" placeholder="Enter new marks">
+    <button id="updateBtn">Update Marks</button>
+    <script>
+        var student = {
+            name: "Shivacharantej",
+            rollNo: "CS101",
+            marks: 85
+        };
+        function updateStudentProfile(studentObj) {
+            document.getElementById("sName").innerText = "Student: " + studentObj.name;
+            document.getElementById("sRoll").innerText = "Roll No: " + studentObj.rollNo;
+            document.getElementById("sMarks").innerText = "Marks: " + studentObj.marks;
+        }
+        function updateMarks(newMarks) {
+            student.marks = newMarks;
+            updateStudentProfile(student);
+        }
+        document.getElementById("updateBtn").addEventListener("click", function() {
+            var inputVal = document.getElementById("newMarksInput").value;
+            if(inputVal !== "") {
+                updateMarks(parseInt(inputVal));
+            }
+        });
+        updateStudentProfile(student);
+    </script>
+</body>
+</html>

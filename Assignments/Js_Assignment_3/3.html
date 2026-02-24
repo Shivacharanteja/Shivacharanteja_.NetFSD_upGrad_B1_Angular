@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .data-box { background: #f4f4f4; padding: 15px; border-radius: 8px; margin: 10px 0; }
+        button { padding: 10px 20px; cursor: pointer; background: #007bff; color: white; border: none; border-radius: 4px; }
+        button:hover { background: #0056b3; }
+        ul { list-style-type: square; }
+        li { margin-bottom: 5px; color: #555; }
+    </style>
+</head>
+<body onload="displayLocationHistory()">
+    <h2>Problem 3: Location-Based Weather Logger</h2>
+    <p>Click the button below to fetch your current coordinates and save them to your history.</p>
+    <button onclick="getUserLocation()">Get My Location</button>
+    <div class="data-box">
+        <strong>Current Coordinates:</strong>
+        <p>Latitude: <span id="lat">N/A</span></p>
+        <p>Longitude: <span id="lng">N/A</span></p>
+    </div>
+    <h3>Location History (Last 5 Entries)</h3>
+    <ul id="historyList">
+        </ul>
+    <script>
+        function getUserLocation() {
+            if (navigator.geolocation) {
+                // Requirement: Must handle Success and Error callbacks
+                navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+        function successCallback(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+            document.getElementById("lat").textContent = latitude.toFixed(6);
+            document.getElementById("lng").textContent = longitude.toFixed(6);
+            saveToLocalStorage(latitude, longitude);
+        }
+        function errorCallback(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("Error: Permission denied. Please allow location access.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Error: Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("Error: The request to get user location timed out.");
+                    break;
+                default:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+        function saveToLocalStorage(lat, lng) {
+            let history = JSON.parse(localStorage.getItem("weather_logs")) || [];
+            const newEntry = {
+                lat: lat.toFixed(4),
+                lng: lng.toFixed(4),
+                time: new Date().toLocaleString()
+            };
+            history.unshift(newEntry);
+            if (history.length > 5) {
+                history = history.slice(0, 5);
+            }
+            localStorage.setItem("weather_logs", JSON.stringify(history));
+            displayLocationHistory();
+        }
+        function displayLocationHistory() {
+            const listElement = document.getElementById("historyList");
+            const history = JSON.parse(localStorage.getItem("weather_logs")) || [];
+
+            if (history.length === 0) {
+                listElement.innerHTML = "<li>No history found.</li>";
+                return;
+            }
+            listElement.innerHTML = history.map(entry => 
+                <li><strong>${entry.time}:</strong> Lat ${entry.lat}, Lng ${entry.lng}</li>
+            ).join('');
+        }
+    </script>
+</body>
+</html>
