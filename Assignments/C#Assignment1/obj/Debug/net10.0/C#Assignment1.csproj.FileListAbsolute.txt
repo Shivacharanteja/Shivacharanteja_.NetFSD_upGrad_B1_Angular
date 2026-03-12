@@ -1,0 +1,15 @@
+D:\CTS .NET\Assignments\C#Assignment1\bin\Debug\net10.0\C#Assignment1.exe
+D:\CTS .NET\Assignments\C#Assignment1\bin\Debug\net10.0\C#Assignment1.deps.json
+D:\CTS .NET\Assignments\C#Assignment1\bin\Debug\net10.0\C#Assignment1.runtimeconfig.json
+D:\CTS .NET\Assignments\C#Assignment1\bin\Debug\net10.0\C#Assignment1.dll
+D:\CTS .NET\Assignments\C#Assignment1\bin\Debug\net10.0\C#Assignment1.pdb
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.AssemblyInfoInputs.cache
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.AssemblyInfo.cs
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.csproj.CoreCompileInputs.cache
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.sourcelink.json
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.dll
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\refint\C#Assignment1.dll
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.pdb
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\C#Assignment1.genruntimeconfig.cache
+D:\CTS .NET\Assignments\C#Assignment1\obj\Debug\net10.0\ref\C#Assignment1.dll

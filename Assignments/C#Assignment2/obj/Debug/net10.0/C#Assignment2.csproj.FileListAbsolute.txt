@@ -1,0 +1,15 @@
+D:\CTS .NET\Assignments\C#Assignment2\bin\Debug\net10.0\C#Assignment2.exe
+D:\CTS .NET\Assignments\C#Assignment2\bin\Debug\net10.0\C#Assignment2.deps.json
+D:\CTS .NET\Assignments\C#Assignment2\bin\Debug\net10.0\C#Assignment2.runtimeconfig.json
+D:\CTS .NET\Assignments\C#Assignment2\bin\Debug\net10.0\C#Assignment2.dll
+D:\CTS .NET\Assignments\C#Assignment2\bin\Debug\net10.0\C#Assignment2.pdb
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.GeneratedMSBuildEditorConfig.editorconfig
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.AssemblyInfoInputs.cache
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.AssemblyInfo.cs
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.csproj.CoreCompileInputs.cache
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.sourcelink.json
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.dll
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\refint\C#Assignment2.dll
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.pdb
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\C#Assignment2.genruntimeconfig.cache
+D:\CTS .NET\Assignments\C#Assignment2\obj\Debug\net10.0\ref\C#Assignment2.dll
