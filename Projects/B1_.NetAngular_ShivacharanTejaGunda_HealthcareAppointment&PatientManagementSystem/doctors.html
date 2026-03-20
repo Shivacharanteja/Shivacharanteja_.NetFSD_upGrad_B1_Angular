@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doctors</title>
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+<!----------------------NAVBAR --------------------->
+<nav class="navbar navbar-dark bg-primary mb-3">
+  <div class="container">
+  <a class="navbar-brand" href="index.html">Healthcare System</a>
+  </div>
+</nav>
+<div class="container mt-4">
+<a href="index.html" class="btn btn-secondary mb-3">Dashboard</a>
+<div class="banner mb-4">
+  <h2>Doctor Management</h2>
+  <p>Manage doctor schedules and availability</p>
+</div>
+<button class="btn btn-primary mb-3"
+data-bs-toggle="modal"
+data-bs-target="#doctorModal">
+Add Doctor
+</button>
+<input type="text"
+id="searchDoctor"
+class="form-control mb-3"
+placeholder="Search doctor by name">
+<div class="table-responsive">
+<table class="table table-hover table-striped shadow-sm">
+<thead class="table-dark">
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Specialization</th>
+<th>Available Slot</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody id="doctorTable"></tbody>
+</table>
+</div>
+</div>
+
+<!----------------------- Modal ------------------------->
+<div class="modal fade" id="doctorModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5>Doctor Form</h5>
+</div>
+<div class="modal-body">
+<input type="hidden" id="doctorId">
+<input class="form-control mb-2"
+id="doctorName"
+placeholder="Doctor Name">
+
+<!-------------------- EMPTY DROPDOWN (JS WILL FILL) --------------------------->
+<select class="form-control mb-2" id="specialization"></select>
+<input class="form-control mb-2"
+id="doctorSlot"
+placeholder="Example: 1:00 PM - 5:00 PM">
+</div>
+<div class="modal-footer">
+<button class="btn btn-success" onclick="saveDoctor()">Save</button>
+</div>
+</div>
+</div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/doctors.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Toast -->
+<div class="toast position-fixed bottom-0 end-0 p-3" id="toastMsg">
+  <div class="toast-body bg-success text-white"></div>
+</div>
+</body>
+</html>
