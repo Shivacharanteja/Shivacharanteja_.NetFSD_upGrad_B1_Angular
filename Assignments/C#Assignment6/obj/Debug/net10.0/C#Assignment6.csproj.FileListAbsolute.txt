@@ -1,0 +1,15 @@
+D:\CTS .NET\Assignments\C#Assignment6\bin\Debug\net10.0\C#Assignment6.exe
+D:\CTS .NET\Assignments\C#Assignment6\bin\Debug\net10.0\C#Assignment6.deps.json
+D:\CTS .NET\Assignments\C#Assignment6\bin\Debug\net10.0\C#Assignment6.runtimeconfig.json
+D:\CTS .NET\Assignments\C#Assignment6\bin\Debug\net10.0\C#Assignment6.dll
+D:\CTS .NET\Assignments\C#Assignment6\bin\Debug\net10.0\C#Assignment6.pdb
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.GeneratedMSBuildEditorConfig.editorconfig
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.AssemblyInfoInputs.cache
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.AssemblyInfo.cs
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.csproj.CoreCompileInputs.cache
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.sourcelink.json
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.dll
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\refint\C#Assignment6.dll
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.pdb
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\C#Assignment6.genruntimeconfig.cache
+D:\CTS .NET\Assignments\C#Assignment6\obj\Debug\net10.0\ref\C#Assignment6.dll

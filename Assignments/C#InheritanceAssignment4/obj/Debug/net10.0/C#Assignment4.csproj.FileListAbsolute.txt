@@ -1,0 +1,15 @@
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\bin\Debug\net10.0\C#Assignment4.exe
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\bin\Debug\net10.0\C#Assignment4.deps.json
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\bin\Debug\net10.0\C#Assignment4.runtimeconfig.json
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\bin\Debug\net10.0\C#Assignment4.dll
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\bin\Debug\net10.0\C#Assignment4.pdb
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.GeneratedMSBuildEditorConfig.editorconfig
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.AssemblyInfoInputs.cache
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.AssemblyInfo.cs
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.csproj.CoreCompileInputs.cache
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.sourcelink.json
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.dll
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\refint\C#Assignment4.dll
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.pdb
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\C#Assignment4.genruntimeconfig.cache
+D:\CTS .NET\Assignments\C#InheritanceAssignment4\obj\Debug\net10.0\ref\C#Assignment4.dll
