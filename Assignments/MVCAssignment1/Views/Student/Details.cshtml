@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    @model Student
+
+    <h2>@ViewData["Message"]</h2>
+
+    <p>Name: @Model.Name</p>
+    <p>Age: @Model.Age</p>
+
+    @if (Model.Age > 18)
+    {
+        <p>Eligible to vote</p>
+    }
+    else
+    {
+        <p>Not eligible</p>
+    }
+</body>
+</html>
