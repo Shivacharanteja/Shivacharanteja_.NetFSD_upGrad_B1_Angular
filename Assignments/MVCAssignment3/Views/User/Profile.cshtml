@@ -1,0 +1,12 @@
+﻿@using MVCAssignment3.ViewModels
+@model UserViewModel
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<h1>Profile</h1>
+<p>Name: @Model.Name</p>
+<p>Email: @Model.Email</p>
+
+<a asp-action="Edit">Edit Profile</a>
+<a asp-action="Logout">Logout</a>
