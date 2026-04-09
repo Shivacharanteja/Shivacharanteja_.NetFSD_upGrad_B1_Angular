@@ -1,0 +1,13 @@
+﻿@model EFCoreAssignment2.DBFirstModels.Teacher
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+
+<h2>Teacher Details</h2>
+
+<p><b>Id:</b> @Model.Id</p>
+<p><b>Name:</b> @Model.Name</p>
+<p><b>Department:</b> @Model.Department?.Name</p>

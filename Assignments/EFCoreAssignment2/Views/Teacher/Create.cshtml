@@ -1,0 +1,37 @@
+﻿@model EFCoreAssignment2.DBFirstModels.Teacher
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+
+<h2>Create Teacher</h2>
+
+<form asp-action="Create" method="post">
+
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="All" style="color:red"></div>
+
+    <label>Name</label><br />
+    <input asp-for="Name" />
+    <span asp-validation-for="Name" style="color:red"></span>
+
+    <br />
+
+    <label>Department</label><br />
+    <select asp-for="DepartmentId" asp-items="ViewBag.Departments">
+        <option value="">-- Select Department --</option>
+    </select>
+    <span asp-validation-for="DepartmentId" style="color:red"></span>
+
+    <br /><br />
+
+    <button type="submit">Save</button>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

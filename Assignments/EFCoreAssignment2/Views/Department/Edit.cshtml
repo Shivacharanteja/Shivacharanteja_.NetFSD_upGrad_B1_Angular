@@ -1,0 +1,21 @@
+﻿@model EFCoreAssignment2.DBFirstModels.Department
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h2>Edit Department</h2>
+
+<form asp-action="Edit" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="Id" />
+
+    <label>Name</label><br />
+    <input asp-for="Name" />
+    <span asp-validation-for="Name" style="color:red"></span>
+
+    <br /><br />
+    <button type="submit">Update</button>
+</form>

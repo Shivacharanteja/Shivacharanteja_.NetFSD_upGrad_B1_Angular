@@ -1,0 +1,18 @@
+﻿@model EFCoreAssignment2.Entities.Student
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+
+<h2>Delete Student</h2>
+
+<p>Are you sure you want to delete this?</p>
+
+<p>@Model.Name</p>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>

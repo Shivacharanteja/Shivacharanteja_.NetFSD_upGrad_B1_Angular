@@ -1,0 +1,18 @@
+﻿@model EFCoreAssignment2.DBFirstModels.Teacher
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+
+<h2>Delete Teacher</h2>
+
+<p>Are you sure you want to delete this?</p>
+
+<p>@Model.Name</p>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>

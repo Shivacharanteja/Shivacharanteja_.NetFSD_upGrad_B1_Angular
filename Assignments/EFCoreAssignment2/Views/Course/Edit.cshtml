@@ -1,0 +1,21 @@
+﻿@model EFCoreAssignment2.Entities.Course
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+
+<h2>Edit Course</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <label>Title</label>
+    <input type="text" asp-for="Title" /><br />
+
+    <label>Credits</label>
+    <input type="number" asp-for="Credits" /><br />
+
+    <button type="submit">Update</button>
+</form>

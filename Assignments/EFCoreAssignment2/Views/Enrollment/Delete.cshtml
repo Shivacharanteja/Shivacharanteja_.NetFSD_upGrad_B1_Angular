@@ -1,0 +1,20 @@
+﻿@model EFCoreAssignment2.Entities.Enrollment
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+
+<h2>Delete Enrollment</h2>
+
+<p>Are you sure?</p>
+
+<p>
+    @Model.Student.Name - @Model.Course.Title
+</p>
+
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Delete</button>
+</form>

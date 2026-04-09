@@ -1,0 +1,39 @@
+﻿@model IEnumerable<EFCoreAssignment2.Entities.Course>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<h2>Courses</h2>
+
+<a href="/Course/Create">Add New Course</a>
+
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Credits</th>
+        <th>Students</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Title</td>
+            <td>@item.Credits</td>
+            <td>
+                @foreach (var e in item.Enrollments)
+                {
+                    <span>@e.Student.Name</span>
+        
+                    <br />
+                }
+            </td>
+            <td>
+                <a href="/Course/Edit/@item.Id">Edit</a> |
+                <a href="/Course/Delete/@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

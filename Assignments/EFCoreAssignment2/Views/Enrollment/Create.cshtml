@@ -1,0 +1,44 @@
+﻿@model EFCoreAssignment2.Entities.Enrollment
+
+@{
+    ViewData["Title"] = "Create Enrollment";
+}
+
+<h2>Create Enrollment</h2>
+
+<form asp-action="Create" method="post">
+
+    @Html.AntiForgeryToken()
+
+    <div asp-validation-summary="All" style="color:red"></div>
+
+    <div>
+        <label>Student</label><br />
+        <select asp-for="StudentId" asp-items="ViewBag.Students" class="form-control">
+            <option value="">-- Select Student --</option>
+        </select>
+        <span asp-validation-for="StudentId" style="color:red"></span>
+    </div>
+
+    <div>
+        <label>Course</label><br />
+        <select asp-for="CourseId" asp-items="ViewBag.Courses" class="form-control">
+            <option value="">-- Select Course --</option>
+        </select>
+        <span asp-validation-for="CourseId" style="color:red"></span>
+    </div>
+
+    <div>
+        <label>Grade</label><br />
+        <input asp-for="Grade" class="form-control" />
+        <span asp-validation-for="Grade" style="color:red"></span>
+    </div>
+
+    <br />
+    <button type="submit">Save</button>
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,24 @@
+﻿@model EFCoreAssignment2.DBFirstModels.Department
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+
+<h2>Department Details</h2>
+
+<p><b>Id:</b> @Model.Id</p>
+<p><b>Name:</b> @Model.Name</p>
+
+<h3>Teachers</h3>
+
+@if (Model.Teachers != null)
+{
+    <ul>
+        @foreach (var t in Model.Teachers)
+        {
+            <li>@t.Name</li>
+        }
+    </ul>
+}

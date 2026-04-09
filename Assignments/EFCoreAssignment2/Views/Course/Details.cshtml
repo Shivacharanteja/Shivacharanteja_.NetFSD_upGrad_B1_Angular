@@ -1,0 +1,19 @@
+﻿@model EFCoreAssignment2.Entities.Course
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+
+<h2>Course Details</h2>
+
+<p>Title: @Model.Title</p>
+<p>Credits: @Model.Credits</p>
+
+<h3>Students</h3>
+
+@foreach (var e in Model.Enrollments)
+{
+    <p>@e.Student.Name</p>
+}
